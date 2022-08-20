@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/display.css' %}">
+    <style media="screen">
+    body{
+      background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZzHq9zR_WMBtrIXbQoLDKefnYm2fr6HbW2Q&usqp=CAU);
+      border:5px dotted yellow;
+    }
+    </style>
+  </head>
+  <body>
+    <div  class="container">
+      <div  class="jumbotron div1">
+         <h1>Hello <span> {{user}}</span><br> Welcome to SBI ATM</h1>
+      </div>
+    <div>
+
+    <div  class="container">
+        <div  class="jumbotron div2">
+           <a href="/deposit" class="btn btn-primary btn-lg">Deposit</a>
+           <a href="/withdraw" class="btn btn-primary btn-lg">Withdraw</a><br><br>
+           <a href="/balance" class="btn btn-success btn-lg">Click Here to Check Balance</a>
+           <a href="/pinchange" class="btn btn-success btn-lg">Click Here to Change Pin</a>
+        </div>
+    <div>
+      <div class="bottom">
+      <a href="/back" class="btn btn-info btn-lg"><< Go Home</a>
+
+    </div>
+  </body>
+</html>
